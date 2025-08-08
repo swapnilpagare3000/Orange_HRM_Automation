@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [OrangeHRM Suite]">
+  <test thread-count="5" name="API Tests(failed)">
+    <classes>
+      <class name="apiTests.LoginAPITest">
+        <methods>
+          <include name="setupAPI"/>
+          <include name="verifyAPILogin"/>
+        </methods>
+      </class> <!-- apiTests.LoginAPITest -->
+      <class name="apiTests.EmployeeAPITest">
+        <methods>
+          <include name="setupAPI"/>
+          <include name="createEmployeeViaAPI"/>
+        </methods>
+      </class> <!-- apiTests.EmployeeAPITest -->
+    </classes>
+  </test> <!-- API Tests(failed) -->
+</suite> <!-- Failed suite [OrangeHRM Suite] -->
