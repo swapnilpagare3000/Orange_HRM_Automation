@@ -18,6 +18,8 @@ public class EmployeePage {
     public void navigateToAddEmployee() {
         driver.findElement(pimMenu).click();
         driver.findElement(addEmployee).click();
+        //driver.findElement(addEmployee).click();
+        
     }
 
     public void addEmployee(String fName, String lName) {
