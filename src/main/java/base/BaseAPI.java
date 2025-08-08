@@ -15,5 +15,6 @@ public class BaseAPI {
         prop.load(fis);
         RestAssured.baseURI = prop.getProperty("api.base");
         //TEst Changes
+        //test Changes
     }
 }
