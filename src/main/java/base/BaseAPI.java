@@ -14,5 +14,6 @@ public class BaseAPI {
         FileInputStream fis = new FileInputStream("src/test/resources/config.properties");
         prop.load(fis);
         RestAssured.baseURI = prop.getProperty("api.base");
+        //TEst Changes
     }
 }
