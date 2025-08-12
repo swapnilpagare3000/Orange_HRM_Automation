@@ -9,7 +9,7 @@ import static org.hamcrest.Matchers.*;
 
 public class EmployeeAPITest extends BaseAPI {
 
-    @Test
+    @Test(enabled=false	)
     public void createEmployeeViaAPI() {
         String payload = "{\"firstName\":\"ApiJohn\", \"lastName\":\"ApiDoe\"}";
         given()

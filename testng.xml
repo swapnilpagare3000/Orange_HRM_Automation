@@ -1,9 +1,14 @@
 <!--DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" -->
-<suite name="OrangeHRM Suite" parallel="methods" thread-count="8">
+<suite name="OrangeHRM Suite">
+<listeners>
+    <listener class-name="utilities.TestListener"/>
+</listeners>
+
   <test name="UI Tests">
     <classes>
       <class name="uiTests.LoginTest"/>
       <class name="uiTests.EmployeeCRUDTest"/>
+      <class name="uiTests.Selftest"/>
     </classes>
   </test>
 

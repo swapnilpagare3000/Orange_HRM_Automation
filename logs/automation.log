@@ -1,0 +1,10 @@
+2025-08-12 19:54:17,077 INFO u.LoginTest [main] Username and password fetched from cconfig. property file
+2025-08-12 19:54:19,079 INFO u.LoginTest [main] Assertion might have failed
+2025-08-12 22:46:31,756 INFO p.LoginPage [main] Login actions Sucessfull
+2025-08-12 22:46:31,786 INFO u.LoginTest [main] Username and password fetched from cconfig. property file
+2025-08-12 22:46:33,702 INFO u.LoginTest [main] Assertion might have failed
+2025-08-12 22:46:43,348 INFO p.LoginPage [main] Login actions Sucessfull
+2025-08-12 22:46:48,176 INFO p.EmployeePage [main] TEst
+2025-08-12 22:47:05,975 INFO p.LoginPage [main] Login actions Sucessfull
+2025-08-12 22:47:05,980 INFO e.EmployeeE2ETest [main] Browser Logged in
+2025-08-12 22:47:11,799 INFO p.EmployeePage [main] TEst

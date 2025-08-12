@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import pages.LoginPage;
 import pages.EmployeePage;
 
+
 import static io.restassured.RestAssured.given;
 import io.restassured.http.ContentType;
 
@@ -26,6 +27,7 @@ public class EmployeeE2ETest extends BaseTest {
         // Validate via UI
         LoginPage lp = new LoginPage(driver);
         lp.login(prop.getProperty("username"), prop.getProperty("password"));
+        logger.info("Browser Logged in");
         EmployeePage ep = new EmployeePage(driver);
         ep.navigateToAddEmployee();
         // Normally you'd search for the employee created and assert presence.

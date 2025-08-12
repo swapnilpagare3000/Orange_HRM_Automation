@@ -1,6 +1,9 @@
 package base;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
@@ -12,6 +15,7 @@ import java.io.FileInputStream;
 public class BaseTest {
     protected WebDriver driver;
     protected Properties prop = new Properties();
+    protected final Logger logger = LogManager.getLogger(this.getClass());
 
     @BeforeClass
     public void loadConfig() throws Exception {

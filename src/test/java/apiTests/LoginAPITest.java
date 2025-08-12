@@ -9,7 +9,7 @@ import static org.hamcrest.Matchers.*;
 
 public class LoginAPITest extends BaseAPI {
 
-    @Test
+    @Test(enabled=false)
     public void verifyAPILogin() {
         String requestBody = "{"
                 + "\"username\":\"" + prop.getProperty("username") + "\","

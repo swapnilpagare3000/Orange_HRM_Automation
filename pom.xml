@@ -32,6 +32,12 @@
       <artifactId>rest-assured</artifactId>
       <version>5.4.0</version>
     </dependency>
+    <!-- Extent Report -->
+    <dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>5.0.9</version>
+</dependency>
 
     <!-- Jackson -->
     <dependency>
@@ -53,6 +59,20 @@
       <artifactId>webdrivermanager</artifactId>
       <version>5.4.0</version>
     </dependency>
+    
+    
+    <dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-core</artifactId>
+    <version>2.20.0</version>
+</dependency>
+
+
+<dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-api</artifactId>
+    <version>2.20.0</version>
+</dependency>
   </dependencies>
   <build>
     <plugins>

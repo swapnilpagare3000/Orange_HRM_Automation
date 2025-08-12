@@ -1,0 +1,1 @@
+{"uuid":"02054f98-052a-423d-b67e-3392e5087d12","name":"e2eTests.EmployeeE2ETest","children":["0db1a3e7-fd00-49b4-b68a-53acf74cee16"],"befores":[{"name":"loadConfig","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1755006632796,"stop":1755006632797}],"afters":[],"start":1755006632794,"stop":1755006649410}
