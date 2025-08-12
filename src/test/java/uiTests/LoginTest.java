@@ -7,7 +7,7 @@ import pages.LoginPage;
 import pages.DashboardPage;
 
 public class LoginTest extends BaseTest {
-    @Test
+    @Test(invocationCount = 5)
     public void verifyLogin() {
         LoginPage lp = new LoginPage(driver);
         lp.login(prop.getProperty("username"), prop.getProperty("password"));
