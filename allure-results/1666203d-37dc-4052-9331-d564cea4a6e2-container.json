@@ -1,0 +1,1 @@
+{"uuid":"1666203d-37dc-4052-9331-d564cea4a6e2","name":"uiTests.EmployeeCRUDTest","children":["66aab989-ac7e-4189-9859-9c75b0137b37"],"befores":[{"name":"loadConfig","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1755172946907,"stop":1755172946907}],"afters":[],"start":1755172933964,"stop":1755172962039}
