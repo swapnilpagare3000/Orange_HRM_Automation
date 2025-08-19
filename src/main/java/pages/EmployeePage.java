@@ -1,7 +1,10 @@
 package pages;
 
 import java.time.Duration;
-
+import java.time.LocalDate;
+import java.time.Period;
+import java.time.temporal.ChronoUnit;
+import java.util.concurrent.ThreadLocalRandom;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
@@ -26,8 +29,10 @@ public class EmployeePage {
     By middlename=By.xpath("//input[@placeholder='Middle Name']");
     By otherId=By.xpath("//label[text()='Other Id']/following::input[1]");
     By editbutton=By.xpath("//button[@class=\"oxd-icon-button oxd-table-cell-action-space\"][1]");
-    By Nationdropdownpage=By.xpath("//i[@class=\"oxd-icon bi-caret-down-fill oxd-select-text--arrow\"]");
-    
+    By Nationdropdownpage=By.xpath("//label[text()='Nationality']/following::div[@class='oxd-select-text oxd-select-text--active'][1]");
+    By DdwonIndian=By.xpath("//div[@role='option']/span[text()='Indian']");   
+    By Maritaldropdownpage=By.xpath("//label[text()='Marital Status']/following::div[@class='oxd-select-text oxd-select-text--active'][1]");   
+    By Ddwonmarital=By.xpath("//div[@role='option']/span[text()='Single']");  
     public EmployeePage(WebDriver driver) {
         this.driver = driver;
     }
@@ -85,14 +90,34 @@ public class EmployeePage {
     	driver.findElement(middlename).sendKeys("middlename");
     	driver.findElement(otherId).sendKeys("98654");
     	logger.info("details filled");
-    	//Select Nationality
+    	//Select Nationality    	// Click on the dropdown
+    	driver.findElement(Nationdropdownpage).click();
+    	driver.findElement(DdwonIndian).click();
+    	driver.findElement(Maritaldropdownpage).click();
+    	driver.findElement(Ddwonmarital).click();
     	
-    	WebElement dropdown = driver.findElement(By.id("Nationdropdownpage"));
-    	Select select=new Select(dropdown);
-    	Thread.sleep(3000);
-    	logger.info("drpdown selected");
-    	select.selectByVisibleText("Indian");
-    	
-    	
+    	//Select birth date
+    	//int EmpPageDate=
+    	/* LocalDate dob = generateRandomDOB();
+         int age = Period.between(dob, LocalDate.now()).getYears();
+         System.out.println("date of birth"+dob);
+         System.out.println("date of birth"+age);*/
     }
+    
+    public static LocalDate generateRandomDOB() {
+        LocalDate today = LocalDate.now();
+
+        // Age range: 20 to 60 years
+        LocalDate maxDOB = today.minusYears(20); // latest possible DOB (youngest)
+        LocalDate minDOB = today.minusYears(60); // oldest possible DOB
+
+        // Random date between minDOB and maxDOB
+        long start = minDOB.toEpochDay();
+        long end = maxDOB.toEpochDay();
+
+        long randomDay = ThreadLocalRandom.current().nextLong(start, end + 1);
+        return LocalDate.ofEpochDay(randomDay);
+    }
+    
+    
 }

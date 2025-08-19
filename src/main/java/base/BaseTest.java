@@ -1,5 +1,6 @@
 package base;
 
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 import org.apache.logging.log4j.LogManager;
@@ -34,6 +35,6 @@ public class BaseTest {
 
     @AfterMethod
     public void tearDown() {
-     //   if (driver != null) driver.quit();
+      if (driver != null) driver.quit();
     }
 }
