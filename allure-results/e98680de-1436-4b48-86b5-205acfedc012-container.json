@@ -1,0 +1,1 @@
+{"uuid":"e98680de-1436-4b48-86b5-205acfedc012","name":"uiTests.Selftest","children":["19c57d26-8c52-476a-bf82-dc7266d43b0e"],"befores":[{"name":"loadConfig","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1755621052282,"stop":1755621052292}],"afters":[],"start":1755621052224,"stop":1755621121010}
